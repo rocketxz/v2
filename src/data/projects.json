@@ -1,0 +1,27 @@
+[
+  {
+    "section": "Engineering Projects",
+    "projects": [
+    {
+      "name": "Sample Project",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod aspernatur ducimus nisi, pariatur non officia cumque enim provident natus ad? Quidem, temporibus illum vero consectetur eius quisquam est recusandae.",
+      "link": "/",
+      "technologies": ["TypeScript", "Nextjs", "Design System","Nodejs", "Docker", "HTML5", "styled-components", "CSS", "GraphQL"]
+    },
+    {
+      "name": "Sample Project 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod aspernatur ducimus nisi, pariatur non officia cumque enim provident natus ad? Quidem, temporibus illum vero consectetur eius quisquam est recusandae.",
+      "link": "/",
+      "technologies": ["TypeScript", "Gatsby", "Contentful CMS", "HTML5", "Styled-components", "Post CSS", "StoryBook", "WordPress", "GraphQL", "JavaScript"]
+    },
+      {
+        "name": "Sample Project 3",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod aspernatur ducimus nisi, pariatur non officia cumque enim provident natus ad? Quidem, temporibus illum vero consectetur eius quisquam est recusandae.",
+        "link": "/",
+        "technologies":  ["TypeScript", "Gatsby","Prismic CMS", "HTML5", "TailwindCSS", "CSS", "GraphQL", "A11y"]
+      }
+
+    ]
+  }
+]
+
