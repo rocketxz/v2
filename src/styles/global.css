@@ -35,25 +35,31 @@ body {
   --dark-foreground-color: #c9c9c9;
   --dark-background-color: #121212;
   font-family: "geist", sans-serif;
-  color: var(--foreground-color);
-  background-color: var(--background-color);
+  color: var(--background-color);
+  /* background-color: var(--background-color);  */
+  background-image: url('/src/images/noise.svg');
+  background-size: cover;
   font-size: 1.6rem;
   line-height: 1.8;
   }
 
   .fill {
-    fill: var(--foreground-color);
+    fill: var(--background-color);
   }
   .stroke {
-    stroke: var(--foreground-color);
+    stroke: var(--background-color);
   }
+  body a {
+    color: var(--dark-foreground-color); 
+ }
   @media (prefers-color-scheme: dark) {
     body {
       color: var(--dark-foreground-color);
-      background: var(--dark-background-color);
+      background-image: url('/src/images/noise.svg');
+      background-size: cover;
     }
     body a {
-      color: var(--dark-foreground-color);
+       color: var(--dark-foreground-color); 
     }
     .fill {
       fill: var(--dark-foreground-color);;
