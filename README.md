@@ -2,6 +2,6 @@
 
 - V2
 
-## Enlaces
+## Link
 
 - **Página Web:** [v2-portfolio](https://v2-portfolio-nine.vercel.app/)
