@@ -1,6 +1,9 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +18,7 @@
   font-display: auto;
   font-display: swap;
 }
+
 @font-face {
   font-family: "geist medium";
   src: url("/fonts/geist_medium.woff2") format("woff2");
@@ -32,7 +36,7 @@ html {
 body {
   --background-color: #f8f8f8;
   --foreground-color: #333;
-  --dark-foreground-color: #c9c9c9;
+  --dark-foreground-color: #1f1414;
   --dark-background-color: #121212;
   font-family: "geist", sans-serif;
   color: var(--background-color);
@@ -41,63 +45,95 @@ body {
   background-size: cover;
   font-size: 1.6rem;
   line-height: 1.8;
+}
+
+.fill {
+  fill: var(--background-color);
+}
+
+.stroke {
+  stroke: var(--background-color);
+}
+
+body a {
+  color: var(--dark-foreground-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--dark-foreground-color);
+    background-image: url('/src/images/noise.svg');
+    background-size: cover;
+  }
+
+  body a {
+    color: var(--dark-foreground-color);
   }
 
   .fill {
-    fill: var(--background-color);
+    fill: var(--dark-foreground-color);
+    ;
   }
+
   .stroke {
-    stroke: var(--background-color);
+    stroke: var(--dark-foreground-color);
+    ;
   }
-  body a {
-    color: var(--dark-foreground-color); 
- }
-  @media (prefers-color-scheme: dark) {
-    body {
-      color: var(--dark-foreground-color);
-      background-image: url('/src/images/noise.svg');
-      background-size: cover;
-    }
-    body a {
-       color: var(--dark-foreground-color); 
-    }
-    .fill {
-      fill: var(--dark-foreground-color);;
-    }
-    .stroke {
-      stroke: var(--dark-foreground-color);;
-    }
 
-  }
-  h1, h2, h3 {
-    font-family: "geist medium", sans-serif;
+}
 
-  }
+h1 {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-size: 2.9rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "geist medium", sans-serif;
+
+}
+
 .container {
   max-width: 80rem;
   margin: 0 auto;
   padding: 2rem 3rem;
   width: 100%;
 }
+
 a {
   text-decoration: none;
   color: #333;
   border-bottom: 1.5px solid #A78BFA;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 p {
   padding: 1rem 0;
+  font-size: 1.1em;
 }
-.screen-reader-text { /* Hide only visually, but have it available for screen-readers */
-	position: absolute !important;
-	display: block;
-	visibility: visible;
-	overflow: hidden;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
+
+.screen-reader-text {
+  /* Hide only visually, but have it available for screen-readers */
+  position: absolute !important;
+  display: block;
+  visibility: visible;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
   clip-path: inset(50%);
   white-space: nowrap;
-    }
+}
